@@ -1,0 +1,3 @@
+mode: dictation
+-
+^dictate: skip()
