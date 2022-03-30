@@ -15,7 +15,6 @@ def on_phrase_post(j):
             actions.mode.enable('command')
             actions.mode.disable(mode)
             try:
-                actions.user.add_to_history()
                 # NOTE: the following API is completely private and subject to change with no notice
                 speech_system._on_audio_frame(j['samples'])
             finally:
